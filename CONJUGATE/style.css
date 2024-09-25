@@ -1,0 +1,126 @@
+html,
+body,
+main {
+  height: 100%;
+}
+
+::-moz-selection {
+  background: #34495e;
+  color: #fff;
+  text-shadow: 0px 0px 0px 2px red; /* adjust the values to your liking */
+}
+
+::selection {
+  background: #34495e;
+  color: #fff;
+  color-scheme: 30px;
+  text-shadow: 0px 0px 0px 2px red;
+}
+::before{
+  color: #006aff;
+}
+
+.jumbotron {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 0;
+  
+}
+
+.navbar-collapse{
+  background-color: rgba(0, 123, 255, 0.341);
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.photo-cover {
+  background: #34495e url(https://static.vecteezy.com/system/resources/previews/016/205/901/non_2x/england-flag-texture-as-background-free-photo.jpg) no-repeat center center/cover fixed;
+  height: 100%;
+  position: relative;
+  filter:drop-shadow(60px)  
+}
+
+
+img{
+  height: 20%;
+  width: 20%;
+  
+
+}
+
+.background-primary {
+  background: #34495e;
+}
+
+.background-secondary {
+  background: #2c3e50;
+}
+
+.large {
+  font-size: 4em;
+}
+
+.medium {
+  font-size: 2em;
+}
+
+/* Header */
+.transparent {
+  background: transparent;
+}
+
+.navbar-inverse {
+  transition: all 0.2s ease-in;
+}
+
+.thumbnail {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+
+.thumbnail-svg {
+  flex: 1 0 auto;
+  padding: 0.5em;
+  max-height: 6em;
+}
+
+.thumbnail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff0000;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.thumbnail:hover .thumbnail-overlay {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+
+.full-screen {
+  background: #eee;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow-y: scroll;
+}
+
+.close-window {
+  cursor: pointer;
+}
